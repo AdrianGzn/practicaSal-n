@@ -1,0 +1,40 @@
+<header>
+    <div id="icon">
+        <img src="/android-icon-192x192.webp" id="smallIcon">
+    </div>
+    <div id="dash">
+        <button>Docs</button>
+        <button>About</button>
+        <button id="support">Support Us</button>
+    </div>
+</header>
+
+
+<div id="contentPather">
+    <img src="/logo.png" id="logo">
+    <p id="title">The Dragon Ball Api</p>
+
+    <div id="contentCards">
+
+        <div *ngFor="let card of cardsToShow">
+            <div class="myCard">
+                <div id="content-image"><img src="{{card.image}}" id="myImage" (click)="submit(card.id)"></div>
+                <div id="content-info" >
+                    <p id="field">Name</p>
+                    <p id="data">{{card.name}}</p>
+                    <p id="field">Base ki</p>
+                    <p id="data">{{card.ki}}</p>
+                    <p id="field">Max Ki</p>
+                    <p id="data">{{card.maxKi}}</p>
+                    <p id="field">Raza</p>
+                    <p id="data">{{card.race}}</p>
+                    <p id="field">Géenero</p>
+                    <p id="data">{{card.gender}}</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
